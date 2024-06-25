@@ -8,4 +8,4 @@ Steps:
 3. How do you compute the ways?
  - Everytime you reach at a node, there are two possibilities:-
     - You found the new minimum distance. Pass it to the queue, and ways[current] = ways[from]
-    - The current_distance is equal to the minimum distance you already have. Don't push it to the queue. ways[current] += ways[from] 
+    - The current_distance is equal to the minimum distance you already have. Don't push it to the queue. ways[current] += ways[from]. 

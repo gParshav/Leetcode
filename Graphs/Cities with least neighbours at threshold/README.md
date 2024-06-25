@@ -1,0 +1,1 @@
+Variation of the Floyd Warshall Algorithm.

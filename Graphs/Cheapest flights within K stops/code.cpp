@@ -55,3 +55,54 @@ public:
 
     }
 };
+
+
+// Much Better Solution
+class Solution {
+public:
+    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
+        vector<vector<pair<int, int>>> graph(n);
+
+        for(auto it : flights){
+            int first = it[0];
+            int second = it[1];
+            int price = it[2];
+            graph[first].push_back({second, price});
+        }
+
+        vector<int> distance(n, 1e9);
+        distance[src] = 0;
+
+        priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, greater<pair<int, pair<int, int>>>> pq;
+
+        pq.push({0, {src, 0}});
+        while(!pq.empty()){
+            int stops = pq.top().first;
+            int first = pq.top().second.first;
+            int price = pq.top().second.second;
+            pq.pop();
+            for(auto it : graph[first]){
+                int second = it.first;
+                int edge_weight = it.second;
+                int temp = stops;
+                if(second != dst){
+                    temp+=1;
+                }
+                if(temp<=k && distance[second]>price+edge_weight){
+                    distance[second] = price+edge_weight;
+                    pq.push({temp, {second, price+edge_weight}});
+
+                }
+            }
+        }
+
+        if(distance[dst]==1e9){
+            return -1;
+        }
+
+        return distance[dst];
+
+        
+        
+    }
+};
