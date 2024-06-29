@@ -27,4 +27,11 @@ Optimal:
 
  - Reverse the entire array
  - Then reverse the first half and the second half according to the k.
+
+# Rotate Array Explanation
+
+Here is the diagram explaining the rotation of the array:
+
+<img src="https://github.com/gParshav/Leetcode/blob/main/Images/Rotate%20Array.jpeg" alt="Rotate Array" height="400">
+
         
