@@ -5,5 +5,9 @@ Random information on Arrays:
 - Maximum size of an array declared globally is 10^7.
 
 
+Basic Methods for all array problems:
+1. For Loops
+2. Hash Maps
+3. 2 Pointer Approach
 
-4 Done
+12 Done
