@@ -10,4 +10,4 @@ Basic Methods for all array problems:
 2. Hash Maps
 3. 2 Pointer Approach
 
-12 Done
+16 Done
