@@ -19,5 +19,5 @@ I and II sorts an unsorted array. III merges two sorted arrays. We can have excl
 Btw, we can also keep one global cnt variable and just increment that all the time inside the merge function. That also works.
 
 Time Complexity: O(N*logN)
-Space Complexity: O(1)
+Space Complexity: O(N)
 
