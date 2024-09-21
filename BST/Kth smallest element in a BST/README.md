@@ -1,0 +1,1 @@
+One simple thing to note is that a BST is always sorted when you traverse inorder.

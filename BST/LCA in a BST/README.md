@@ -1,0 +1,1 @@
+Pretty much similar to LCA in a Binary Tree.

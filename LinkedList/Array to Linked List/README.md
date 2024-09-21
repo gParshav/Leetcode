@@ -1,0 +1,1 @@
+Got to know how structs work, how constructors work, and the general architecture of a linked list.
